@@ -37,4 +37,14 @@ else
   "ты ж программист"
 end
 
+#1.4
 
+puts "Какую команду вы хотите выполнить? ruby или ОС?"
+input_command = gets.chomp
+
+case input_command
+when "ОС"
+  system "#{gets.chomp}"    #echo "hello world"
+when "ruby"
+  system "ruby -e \"#{gets.chomp}\""
+end
