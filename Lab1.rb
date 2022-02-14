@@ -23,5 +23,18 @@ else
   puts "скоро будет ruby"
 end
 
+#1.3 case
+case lang
+when "ruby"
+  puts "бе, подлиза"
+when "python"
+  puts "а вот это мне нравится больше"
+when "html"
+  puts "чел, ты...."
+when "c++"
+  puts "ох, первый курс..."
+else
+  "ты ж программист"
+end
 
 
