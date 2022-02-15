@@ -48,3 +48,4 @@ when "ОС"
 when "ruby"
   system "ruby -e \"#{gets.chomp}\""
 end
+
