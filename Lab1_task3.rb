@@ -8,7 +8,6 @@ def sum_elem(x)
   res
 end
 
-puts sum_elem(arr)
 
 def mult_elem(x)
   res = 1
@@ -18,7 +17,6 @@ def mult_elem(x)
   res
 end
 
-puts mult_elem(arr)
 
 def min_elem(x)
   res = x[0]
@@ -30,7 +28,6 @@ def min_elem(x)
   res
 end
 
-puts min_elem(arr)
 
 def max_elem(x)
   res = x[0]
@@ -42,4 +39,49 @@ def max_elem(x)
   res
 end
 
-puts max_elem(arr)
+
+def choose_method
+
+  puts "Что нужно найти?
+    1. Сумма
+    2. Произведение
+    3. Максимум
+    4. Минимум"
+  oper = gets.chomp
+
+  puts "Выберите способ задания массива:
+    1. Ввод с клавиатуры
+    2. Чтение из файла"
+  method = STDIN.gets.chomp
+
+  input_arr = Array.new
+
+  case method
+  when "1"
+    input_arr = gets.chomp.split.map(&:to_i)
+  when "2"
+    puts "Введите адрес файла: "
+    file = gets.chomp
+    file_arr = IO.read(file)
+    input_arr = file_arr.split.map(&:to_i)
+  else
+    puts "Ошибка"
+  end
+
+
+  case oper
+  when "1"
+    puts sum_elem(input_arr)
+  when "2"
+    puts mult_elem(input_arr)
+  when "3"
+    puts max_elem(input_arr)
+  when "4"
+    puts min_elem(input_arr)
+  else
+    puts "Ошибка!"
+  end
+  input_arr
+end
+
+choose_method

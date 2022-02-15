@@ -30,6 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager" selected="Ruby.Lab1_task3">
     <configuration name="Lab1_task2" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -80,7 +81,7 @@
       <updated>1644918089169</updated>
       <workItem from="1644918091806" duration="638000" />
       <workItem from="1644920009492" duration="4799000" />
-      <workItem from="1644962386760" duration="616000" />
+      <workItem from="1644962386760" duration="2476000" />
     </task>
     <servers />
   </component>
@@ -89,6 +90,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ruby@Lab1_task2.rcov" NAME="Lab1_task2 Coverage Results" MODIFIED="1644962509435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
-    <SUITE FILE_PATH="coverage/Ruby@Lab1_task3.rcov" NAME="Lab1_task3 Coverage Results" MODIFIED="1644962986544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
+    <SUITE FILE_PATH="coverage/Ruby@Lab1_task3.rcov" NAME="Lab1_task3 Coverage Results" MODIFIED="1644964277500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
   </component>
 </project>
