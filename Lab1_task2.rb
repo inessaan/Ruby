@@ -51,3 +51,25 @@ def dig_min(x)
 end
 
 puts dig_min(numb)
+
+#3
+meth = ARGV[1].to_i
+
+def sum_div(x)   #13195 [5,7,13,29] = 54    654 [2,3,109]  =114
+  res = 0
+  d = 2
+  while d * d <= x
+    if x % d == 0
+      res+=d
+    x /= d
+    else
+      d += 1
+    end
+  end
+  if x > 1
+    res+=x
+  end
+  res
+end
+
+puts sum_div(numb)
