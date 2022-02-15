@@ -8,11 +8,10 @@ def dig_sum(x)
     x /= 10
   end
   res
-  puts res
 end
 
 numb = ARGV[0].to_i
-dig_sum(numb)
+puts dig_sum(numb)
 
 #2
 def dig_mult(x)
@@ -89,3 +88,18 @@ def odd_3 (x)
 end
 
 puts odd_3(numb)
+
+def mult_div(x)
+  res = 1
+
+  (1...x).each do |i|
+    if x % i == 0
+      if dig_sum(x) > dig_sum(x % i)
+        res *= i
+      end
+    end
+  end
+  res
+end
+
+puts mult_div(numb)
