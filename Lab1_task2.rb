@@ -73,3 +73,19 @@ def sum_div(x)   #13195 [5,7,13,29] = 54    654 [2,3,109]  =114
 end
 
 puts sum_div(numb)
+
+def odd_3 (x)
+  res = 0
+  while x > 0
+    d = x % 10
+    if d % 2 != 0
+      if d > 3
+        res += 1
+      end
+    end
+    x /= 10
+  end
+  res
+end
+
+puts odd_3(numb)
