@@ -25,3 +25,29 @@ def dig_mult(x)
 end
 
 puts dig_mult(numb)
+
+def dig_max(x)
+  res = 0
+  while x > 0
+    if res < x % 10
+      res = x % 10
+    end
+    x /= 10
+  end
+  res
+end
+
+puts dig_max(numb)
+
+def dig_min(x)
+  res = 10
+  while x > 0
+    if res > x % 10
+      res = x % 10
+    end
+    x /= 10
+  end
+  res
+end
+
+puts dig_min(numb)
