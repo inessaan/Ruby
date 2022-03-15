@@ -4,7 +4,7 @@ def sum_elem(x)
   res = 0
   x.each do |i|
     res += i
-    end
+  end
   res
 end
 
@@ -13,7 +13,7 @@ def mult_elem(x)
   res = 1
   x.each do |i|
     res *= i
-    end
+  end
   res
 end
 
@@ -24,7 +24,7 @@ def min_elem(x)
     if res > i
       res = i
     end
-    end
+  end
   res
 end
 
@@ -60,7 +60,7 @@ def choose_method
   when "1"
     input_arr = gets.chomp.split.map(&:to_i)
   when "2"
-    puts "Введите адрес файла: "
+    puts "Введите адрес файла: " #C:\Users\Inessa\Documents\GitHub\Ruby\input.txt
     file = gets.chomp
     file_arr = IO.read(file)
     input_arr = file_arr.split.map(&:to_i)

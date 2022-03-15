@@ -7,7 +7,7 @@ def dig_sum(x)
     res += x % 10
     x /= 10
   end
-  res
+
 end
 
 numb = ARGV[0].to_i
@@ -60,7 +60,7 @@ def sum_div(x)   #13195 [5,7,13,29] = 54    654 [2,3,109]  =114
   while d * d <= x
     if x % d == 0
       res+=d
-    x /= d
+      x /= d
     else
       d += 1
     end
