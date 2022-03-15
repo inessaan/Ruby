@@ -57,10 +57,31 @@ end
 
 def indxs(arr)
   arr_min = (1...arr.size).select{ |x| arr[x] < arr[x-1] }
-  indexes = "Индексы: #{arr_min}. Количество: #{arr_min.size}"
+  indexes = "Индексы элементов, меньших левого соседа: #{arr_min}.
+Их количество: #{arr_min.size}"
   return indexes
 end
 
+# Задание 49
+
+require 'prime'
+
+def del(a)
+  b = (1..a/2+1)
+  lis = []
+  b.each{ |i| if a%i==0 then lis.append(i) end }
+  return lis
+end
+
+
+def all_prime_del(arr)
+  arr_new = (1...arr.size).select{ |x| arr[x] < arr[x-1] }
+  arr.each{ |i| arr_new.append(del(i)) }
+  arr_del = arr_new.flatten.uniq.sort
+  prime_del = arr_del.select{ |i| Prime.prime?(i) }
+
+  return prime_del
+end
 
 # Выбор задания
 
@@ -68,7 +89,8 @@ puts "Выберите задание:
 1. - Задание 1
 2. - Задание 13
 3. - Задание 25
-4. - Задание 37"
+4. - Задание 37
+5. - Задание 49"
 
 task = gets.chomp
 case task
@@ -82,4 +104,7 @@ when '3'
   puts max_in_interval(get_list(), a, b)
 when '4'
   puts indxs(get_list())
+when '5'
+  print all_prime_del(get_list())
 end
+
