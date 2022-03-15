@@ -53,12 +53,22 @@ def max_in_interval(arr, a, b)
   return arr[a...b].max
 end
 
+# Задание 37
+
+def indxs(arr)
+  arr_min = (1...arr.size).select{ |x| arr[x] < arr[x-1] }
+  indexes = "Индексы: #{arr_min}. Количество: #{arr_min.size}"
+  return indexes
+end
+
+
 # Выбор задания
 
 puts "Выберите задание:
 1. - Задание 1
 2. - Задание 13
-3. - Задание 25"
+3. - Задание 25
+4. - Задание 37"
 
 task = gets.chomp
 case task
@@ -70,4 +80,6 @@ when '3'
   print "Введите (a, b) через пробел: "
   a, b = gets.chomp.split.map(&:to_i)
   puts max_in_interval(get_list(), a, b)
+when '4'
+  puts indxs(get_list())
 end
