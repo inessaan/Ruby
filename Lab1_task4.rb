@@ -34,4 +34,12 @@ def count_after_max(arr)
 end
 
 
-print(count_after_max(get_list()))
+# print(count_after_max(get_list()))
+
+# Задание 13
+
+def before_min(arr)
+  return arr.push(arr.slice!(0...arr.index(arr.min)))
+end
+
+puts before_min(get_list())

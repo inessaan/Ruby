@@ -98,7 +98,7 @@
       <workItem from="1644918091806" duration="638000" />
       <workItem from="1644920009492" duration="4799000" />
       <workItem from="1644962386760" duration="2583000" />
-      <workItem from="1647359415257" duration="2421000" />
+      <workItem from="1647359415257" duration="3505000" />
     </task>
     <servers />
   </component>
@@ -108,6 +108,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ruby@Lab1_task2.rcov" NAME="Lab1_task2 Coverage Results" MODIFIED="1644962509435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
     <SUITE FILE_PATH="coverage/Ruby@Lab1_task3.rcov" NAME="Lab1_task3 Coverage Results" MODIFIED="1644964277500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
-    <SUITE FILE_PATH="coverage/Ruby@Lab1_task4.rcov" NAME="Lab1_task4 Coverage Results" MODIFIED="1647361072417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
+    <SUITE FILE_PATH="coverage/Ruby@Lab1_task4.rcov" NAME="Lab1_task4 Coverage Results" MODIFIED="1647363606380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby" />
   </component>
 </project>
