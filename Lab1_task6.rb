@@ -8,3 +8,8 @@ puts str.scan(/([0-2][0-9]|3[0-1]).(0[1-9]|1[0-2]|января|февраля|м
 puts "Введите строку:"
 str= STDIN.gets.chomp
 puts  str.scan(/\-\d+\.\d+|\d+\.\d+/).map{ |n| n.to_f }.max
+
+# задание 6.9
+puts "Введите строку:"
+str= STDIN.gets.chomp
+puts str.scan(/[-+]?\d+\/\d+|[-+]?\d+\.\d+/).map{|e| e.to_f}.min
