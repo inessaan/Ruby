@@ -13,3 +13,9 @@ puts  str.scan(/\-\d+\.\d+|\d+\.\d+/).map{ |n| n.to_f }.max
 puts "Введите строку:"
 str= STDIN.gets.chomp
 puts str.scan(/[-+]?\d+\/\d+|[-+]?\d+\.\d+/).map{|e| e.to_f}.min
+
+# задание 6.18
+
+puts "Введите строку:"
+str= STDIN.gets.chomp
+puts  str.scan(/\d+/).map{ |i| i.size }.max
