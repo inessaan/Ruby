@@ -85,3 +85,4 @@ def choose_method
 end
 
 choose_method
+
