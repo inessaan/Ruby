@@ -1,12 +1,12 @@
 class Department
   @duties = []
 
-  def initialize (name,phone_number,duties=nil,selected_duty=nil)
+  def initialize (name,phone_number,duties=nil,selected_duty=nil,post_list=Post_list.new)
     self.name= name
     self.phone= phone
     @duties = duties
     @selected_duty = selected_duty
-
+    @post_list = post_list
   end
 
 
