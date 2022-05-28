@@ -1,0 +1,19 @@
+---
+- !ruby/object:Department
+  name: Name_dep
+  phone_number: "+79648563221"
+  duties: {}
+  selected_duty:
+  post_list: !ruby/object:Post_list
+    post_list:
+    - !ruby/object:Post
+      department: Name_dep
+      post_name: post1
+      salary: '20'
+      vacancy: true
+    - !ruby/object:Post
+      department: Name_dep
+      post_name: post2
+      salary: '40'
+      vacancy: false
+    selected_note: 0

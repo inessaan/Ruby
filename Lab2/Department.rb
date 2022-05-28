@@ -1,3 +1,6 @@
+require_relative 'Post_list.rb'
+require_relative 'Post.rb'
+
 class Department
   @duties = []
 
@@ -34,7 +37,7 @@ class Department
   attr_accessor :name
   attr_reader :phone
 
-
+  #вывод всех обязанностей
   def Department.get_dep_str(dep)
     dep = dep.split("\n")
     dep_name,phone_number=dep[0].split("|")
@@ -82,9 +85,35 @@ class Department
   end
 
 
+  # Добавить должность
+  def add_post(post_name,salary,vacancy)
+    @post_list.add_note(Post.new(@name,post_name,salary,vacancy))
+  end
+
+  # Выбрать должность
+  def select_post(index)
+    @post_list.choose_note(index)
+  end
+
+  # Возвращает выбраную должность
+  def get_selected_post()
+    @post_list.get_note
+  end
+
+  # Удалить должность
+  def delete_post()
+    @post_list.delete_note
+  end
+
+  # Получить все должности
+  def get_all_posts()
+    @post_list.post_list
+  end
+
   def to_s
-    department_str="#{@name}|#{@phone}"
+    department_str="#{@name}|#{@phone_number}"
     @duties.keys.each{|duty| department_str+="\n#{duty}:#{@duties[duty]}"}
+    department_str+= @post_list.to_s
     department_str
   end
 

@@ -1,0 +1,11 @@
+---
+- !ruby/object:Department
+  name: Name
+  phone_number: '79184538788'
+  duties:
+    Обязанность_1: duty1
+    Обязанность_2: duty2
+  selected_duty:
+  post_list: !ruby/object:Post_list
+    post_list: []
+    selected_note: 0
