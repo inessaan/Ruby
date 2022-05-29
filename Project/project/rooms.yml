@@ -1,0 +1,21 @@
+---
+1: !ruby/object:Model
+  name: DBL
+  id: 1
+  type: Двухместный номер
+  cost: '3000'
+2: !ruby/object:Model
+  name: SGL
+  id: 2
+  type: Одноместный номер
+  cost: '2500'
+3: !ruby/object:Model
+  name: TRL
+  id: 3
+  type: Трехместный номер
+  cost: '6000'
+4: !ruby/object:Model
+  name: BDRM
+  id: 4
+  type: Аппартаменты
+  cost: '9000'

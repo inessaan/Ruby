@@ -57,7 +57,7 @@ def main
   #write_to_yaml("Departments.yaml",arr_dep)
   #deps_list=Department_list.read_from_yaml("Departments.yaml")
   #puts deps_list
-  #deps_list.add_note(Department.new("Отдел_Закупок","+89284355055"))
+  #deps_list.add_note(Department.new("ОТдле","+89284355055"))
   #deps_list.sort_by_name
   #puts deps_list
 

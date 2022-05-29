@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>Гостиница</title>
+        <style type="text/css">
+            body {
+                font-size: 28px;
+                font-family: Montserrat;
+                padding: 0 30% 0 30% ;
+                margin: 3% 0;
+            }
+            a {
+                text-decoration: none;
+
+            }
+            a:active,a:visited{
+                color: black;
+            }
+            table{
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+            li{
+                padding:7px;
+            }
+            td {
+                padding:10px;
+                border: 2px solid lightgray;
+            }
+        </style>
+    </head>
+    <body>
+    <div style=" width: 650px;display: inline-block">
+        <h1>Гостиница "Звезда"</h1>
+        <img src="https://img1.goodfon.ru/wallpaper/nbig/d/b6/otel-basseyn-tailand.jpg" alt="альтернативный текст"
+        height="400px" width="630px" float="center">
+        <h2>В гостинице представлены следующие номера:</h2>
+        <ol type="1">
+            <% @rooms.each do |room| %>
+                <li>
+                    <a style="text-decoration: none;" href="/project"<%= room.id %>"><%= room.name %></a>
+                </li>
+            <% end %>
+        </ol>
+        <h2>Действия:</h2>
+        <table>
+            <tr>
+                <td><a  href="/project/update">Изменить информацию о гостиничном номере</a></td>
+            </tr>
+            <tr>
+                <td><a  href="/project/delete">Удалить гостичный номер</a></td>
+            </tr>
+            <tr>
+                <td><a  href="/project/new">Добавить новый гостиничный номер</a></td>
+            </tr>
+        <table>
+    </div>
+    </body>
+</html>

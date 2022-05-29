@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>Удалить информацию о гостиничном номере</title>
+        <style type="text/css">
+            body {
+                font-size: 20px;
+                font-family: Montserrat;
+                padding: 0% 15% 0% 30% ;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:active,a:visited{
+                color: black;
+            }
+            table{
+                border-collapse: collapse;
+                border: 3px solid black;
+            }
+            td {
+                padding:10px;
+                border: 2px solid lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Удалить информацию о номере</h1>
+        <form method="post" action="/project/delete_highlight">
+            <table>
+                <tr>
+                    <td><label for="id">id Номера:</label></td>
+                    <td><input type="number" name="id"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    <a href="/project">Главное окно</a>
+    </body>
+</html>

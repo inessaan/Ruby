@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8' />
+        <title>Гостиничный номер — <%= @rooms.name %></title>
+        <style type="text/css">
+            body {
+                font-size: 20px;
+                font-family: Montserrat;
+                padding: 8% 30% 0% 30% ;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:active,a:visited{
+                color: black;
+            }
+            table{
+                border-collapse: collapse;
+                border: 3px solid black;
+                margin-bottom: 40px;
+            }
+            td {
+                padding:10px 10px;
+                border: 2px solid lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><strong>Код номера:</strong></td>
+                <td><%= @rooms.name %></td>
+            </tr>
+            <tr>
+                <td><strong>Тип:</strong></td>
+                <td><%= @rooms.type %></td>
+            </tr>
+            <tr>
+                <td><strong>Стоимость:</strong></td>
+                <td><%= @rooms.cost %></td>
+            </tr>
+          <tr>
+            <td><strong>id:</strong></td>
+            <td><%= @rooms.id %></td>
+          </tr>
+        </table>
+            <a href="/project">Главное окно</a>
+    </body>
+</html>
