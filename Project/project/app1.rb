@@ -6,11 +6,11 @@ require_relative 'Controllers/controller'
 require 'yaml/store'
 
 
-employee = Controller.new
-employee.get_list('rooms.yml')
+data = Controller.new
+data.get_list('rooms.yml')
 
 get('/project') do
-  @rooms = employee.all
+  @rooms = data.all
 	erb :index
 end
 
@@ -25,7 +25,7 @@ post('/project/create') do
 	@rooms.name = params['name']
 	@rooms.type = params['type']
 	@rooms.cost = params['cost']
-	employee.save(@rooms)
+	data.save(@rooms)
 	redirect '/project/new'
 end
 
@@ -37,7 +37,7 @@ end
 post('/project/delete_highlight') do
 	@rooms = Model.new
 	@rooms.id = params['id'].to_i
-	employee.delete(@rooms)
+	data.delete(@rooms)
 	redirect '/project/delete'
 end
 
@@ -52,7 +52,7 @@ post('/project/updates') do
 	@rooms.type = params['type']
 	@rooms.cost = params['cost']
 	@rooms.id = params['id'].to_i
-	employee.change(@rooms)
+	data.change(@rooms)
 	redirect '/project/update'
 end
 
